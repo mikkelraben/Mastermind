@@ -21,7 +21,7 @@ namespace winrt::Mastermind::implementation
         masterColors colors;
 
 
-        m_Color::Color test = colors.Colors[5].color;
+        m_Color::Color test = colors.Colors[0].color;
         myButton().Background(SolidColorBrush(test.color));
         myButton().Resources().Insert(winrt::box_value(L"ButtonBackgroundPointerOver"), winrt::box_value(SolidColorBrush(test.hoverColor)));
         myButton().Resources().Insert(winrt::box_value(L"ButtonBackgroundPressed"), winrt::box_value(SolidColorBrush(test.PressedColor)));
