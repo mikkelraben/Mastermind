@@ -11,6 +11,7 @@ namespace m_Color {
 	Color::Color(Windows::UI::Color color)
 	{
 		this->color = color;
+		CalculateOtherColors();
 	}
 	Color::Color()
 	{
@@ -25,18 +26,18 @@ namespace m_Color {
 		//if color is dark
 		if (hsl.l < 0.3)
 		{
-			hover = HSL(hsl.h, hsl.s, hsl.l + 0.02);
+			hover = HSL(hsl.h, hsl.s, hsl.l + 0.05);
 			//if color is very dark
-			if (hsl.l > 0.02)
+			if (hsl.l > 0.05)
 			{
-				pressed = HSL(hsl.h, hsl.s, hsl.l - 0.02);
+				pressed = HSL(hsl.h, hsl.s, hsl.l - 0.05);
 			}
 		}
 		//if color is light
 		else
 		{
-			hover = HSL(hsl.h, hsl.s, hsl.l - 0.02);
-			pressed = HSL(hsl.h, hsl.s, hsl.l - 0.04);
+			hover = HSL(hsl.h, hsl.s, hsl.l - 0.05);
+			pressed = HSL(hsl.h, hsl.s, hsl.l - 0.1);
 		}
 		hoverColor = hover.ToRGB();
 		PressedColor = pressed.ToRGB();
@@ -44,9 +45,9 @@ namespace m_Color {
 
 	HSL::HSL(Windows::UI::Color color)
 	{
-		float R = color.R / 255;
-		float G = color.G / 255;
-		float B = color.B / 255;
+		float R = static_cast<float>(color.R) / 255.0;
+		float G = static_cast<float>(color.G) / 255.0;
+		float B = static_cast<float>(color.B) / 255.0;
 
 		float minRGB = min(min(R, G), B);
 		float maxRGB = max(max(R, G), B);
@@ -73,13 +74,13 @@ namespace m_Color {
 				h = (G - B) / (maxRGB - minRGB);
 			}
 			else if (G == maxRGB) {
-				h = 2 + (G - B) / (maxRGB - minRGB);
+				h = 2 + (B - R) / (maxRGB - minRGB);
 			}
 			else
 			{
-				h = 4 + (G - B) / (maxRGB - minRGB);
+				h = 4 + (R - G) / (maxRGB - minRGB);
 			}
-			h * 60;
+			h = h * 60;
 			if (h < 0) {
 				h = h + 360;
 			}
