@@ -2,6 +2,7 @@
 #include "MainWindow.xaml.h"
 #include "Color.h"
 #include "Colors.h"
+#include "Board.h"
 #if __has_include("MainWindow.g.cpp")
 #include "MainWindow.g.cpp"
 #endif

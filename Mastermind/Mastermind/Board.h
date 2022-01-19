@@ -2,6 +2,5 @@
 #include "Colors.h"
 class Board
 {
-
+	
 };
-
