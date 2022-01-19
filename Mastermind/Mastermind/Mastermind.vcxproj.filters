@@ -5,6 +5,7 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainWindow.xaml" />
+    <Page Include="MainGame.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="App.idl" />
@@ -13,21 +14,34 @@
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
-    <ClCompile Include="Color.cpp" />
-    <ClCompile Include="Colors.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="CodeRow.cpp" />
+    <ClCompile Include="Code.cpp" />
+    <ClCompile Include="Color.cpp">
+      <Filter>Color</Filter>
+    </ClCompile>
+    <ClCompile Include="Colors.cpp">
+      <Filter>Color</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Color.h" />
-    <ClInclude Include="Colors.h" />
     <ClInclude Include="Board.h" />
     <ClInclude Include="CodeRow.h" />
+    <ClInclude Include="Code.h" />
+    <ClInclude Include="Color.h">
+      <Filter>Color</Filter>
+    </ClInclude>
+    <ClInclude Include="Colors.h">
+      <Filter>Color</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Assets">
       <UniqueIdentifier>{e48dc53e-40b1-40cb-970a-f89935452892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Color">
+      <UniqueIdentifier>{cad1eb5d-70ae-4819-8e94-614872dcbfdb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

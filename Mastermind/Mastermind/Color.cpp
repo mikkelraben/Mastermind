@@ -26,18 +26,18 @@ namespace m_Color {
 		//if color is dark
 		if (hsl.l < 0.3)
 		{
-			hover = HSL(hsl.h, hsl.s, hsl.l + 0.05);
+			hover = HSL(hsl.h, hsl.s, hsl.l + 0.02);
 			//if color is very dark
 			if (hsl.l > 0.05)
 			{
-				pressed = HSL(hsl.h, hsl.s, hsl.l - 0.05);
+				pressed = HSL(hsl.h, hsl.s, hsl.l - 0.02);
 			}
 		}
 		//if color is light
 		else
 		{
-			hover = HSL(hsl.h, hsl.s, hsl.l - 0.05);
-			pressed = HSL(hsl.h, hsl.s, hsl.l - 0.1);
+			hover = HSL(hsl.h, hsl.s, hsl.l - 0.02);
+			pressed = HSL(hsl.h, hsl.s, hsl.l - 0.04);
 		}
 		hoverColor = hover.ToRGB();
 		PressedColor = pressed.ToRGB();

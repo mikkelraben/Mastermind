@@ -1,9 +1,11 @@
-#include "pch.h"
-
+#pragma once
+#include "Code.h"
 class CodeRow
 {
-	enum result {None,Color,Position}; 
-	int Code[4];
-	result Result[4];
-	void UpdateResult();
+	CodeRow();
+	enum Result {None, Color, Position};
+	Code* Row;
+	Result* ResultGrid;
+	void calculateResult();
 };
+
