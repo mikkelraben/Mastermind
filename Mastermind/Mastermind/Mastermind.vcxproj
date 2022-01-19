@@ -102,8 +102,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />
+    <ClInclude Include="Code.h" />
+    <ClInclude Include="CodeRow.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Colors.h" />
+    <ClInclude Include="MainGame.xaml.h">
+      <DependentUpon>MainGame.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -114,12 +120,21 @@
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
+    <Page Include="MainGame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Code.cpp" />
+    <ClCompile Include="CodeRow.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Colors.cpp" />
+    <ClCompile Include="MainGame.xaml.cpp">
+      <DependentUpon>MainGame.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
@@ -135,6 +150,10 @@
     <Midl Include="App.idl">
       <SubType>Code</SubType>
       <DependentUpon>App.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="MainGame.idl">
+      <DependentUpon>MainGame.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
     <Midl Include="MainWindow.idl">
       <SubType>Code</SubType>

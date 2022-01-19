@@ -1,9 +1,22 @@
 #include "pch.h"
 #include "Colors.h"
+#include <exception>
 
 masterColors::masterColors()
 {
+	Colors = new m_Color::Color[numColors];
 	GenerateColors();
+}
+
+//int must be 1 or larger.
+masterColors::masterColors(int numColors)
+{
+	if (numColors <= 0)
+	{
+		throw std::out_of_range("numColors is lower or equal to zero (0)");
+	}
+	this->numColors = numColors;
+	masterColors();
 }
 
 void masterColors::GenerateColors()
@@ -18,3 +31,4 @@ void masterColors::GenerateColors()
 		Colors[i] = hsl.ToRGB();
 	}
 }
+

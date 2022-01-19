@@ -4,8 +4,9 @@
 class masterColors {
 public:
 	masterColors();
-	static const int numColors = 6;
-	m_Color::Color Colors[numColors];
+	masterColors(int numColors);
+	m_Color::Color* Colors;
 private:
 	void GenerateColors();
+	int numColors = 6;
 };
