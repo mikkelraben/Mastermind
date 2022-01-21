@@ -12,4 +12,3 @@ private:
 	int numColors = 6;
 
 };
-
