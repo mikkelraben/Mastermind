@@ -4,6 +4,5 @@ namespace Mastermind
     runtimeclass MainGame : Microsoft.UI.Xaml.Controls.Page
     {
         MainGame();
-        Int32 MyProperty;
     }
 }

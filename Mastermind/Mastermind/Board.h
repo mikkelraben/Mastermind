@@ -8,6 +8,8 @@ public:
 	CodeRow* rows;
 private:
 	int numRows = 10;
+	int numColumns = 4;
+	int numColors = 6;
 
 };
 

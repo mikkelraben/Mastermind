@@ -17,18 +17,9 @@ namespace winrt::Mastermind::implementation
         InitializeComponent();
     }
 
-    int32_t MainGame::MyProperty()
-    {
-        throw hresult_not_implemented();
-    }
-
-    void MainGame::MyProperty(int32_t /* value */)
-    {
-        throw hresult_not_implemented();
-    }
-
     void MainGame::myButton_Click(IInspectable const&, RoutedEventArgs const&)
     {
         myButton().Content(box_value(L"Clicked"));
     }
+
 }
