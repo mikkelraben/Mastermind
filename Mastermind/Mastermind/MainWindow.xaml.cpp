@@ -1,8 +1,7 @@
 ﻿#include "pch.h"
 #include "MainWindow.xaml.h"
-#include "Color.h"
 #include "Colors.h"
-#include "Board.h"
+#include "ColorButton.h"
 #if __has_include("MainWindow.g.cpp")
 #include "MainWindow.g.cpp"
 #endif
@@ -34,5 +33,7 @@ namespace winrt::Mastermind::implementation
     void MainWindow::myButton_Click(IInspectable const&, RoutedEventArgs const&)
     {
         myButton().Content(box_value(L"Clicked"));
+
     }
+
 }

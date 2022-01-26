@@ -105,6 +105,7 @@
     <ClInclude Include="Code.h" />
     <ClInclude Include="CodeRow.h" />
     <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorButton.h" />
     <ClInclude Include="Colors.h" />
     <ClInclude Include="CommonUILayer.h" />
     <ClInclude Include="MainGame.xaml.h">
@@ -132,6 +133,7 @@
     <ClCompile Include="Code.cpp" />
     <ClCompile Include="CodeRow.cpp" />
     <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ColorButton.cpp" />
     <ClCompile Include="Colors.cpp" />
     <ClCompile Include="CommonUILayer.cpp" />
     <ClCompile Include="MainGame.xaml.cpp">

@@ -40,6 +40,9 @@
     <ClCompile Include="pch.cpp">
       <Filter>App</Filter>
     </ClCompile>
+    <ClCompile Include="ColorButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color.h">
@@ -65,6 +68,9 @@
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorButton.h">
+      <Filter>UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

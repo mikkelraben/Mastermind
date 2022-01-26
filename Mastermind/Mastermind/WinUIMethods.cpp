@@ -9,7 +9,7 @@ void WinUIMethods::reset()
 {
 }
 
-void WinUIMethods::setResult()
+void WinUIMethods::setResult(int color)
 {
 }
 
@@ -24,7 +24,9 @@ void WinUIMethods::setupColorButton(winrt::Microsoft::UI::Xaml::Controls::Button
 	button.CornerRadius(corner);
 	button.Width(32);
 	button.Height(32);
+	winrt::Microsoft::UI::Xaml::Controls::Flyout flyout;
+	winrt::Microsoft::UI::Xaml::Controls::TextBlock text;
+	text.Text(L"Hello World!");
 
-	//button.Click({ this,&WinUIMethods::setResult });
 	button.Flyout();
 }
