@@ -11,20 +11,7 @@
 
     <Grid Background="#1c1c1c">
         <Grid Name="MainGrid" Width="200" Height="600" Background="{ThemeResource LayerFillColorDefaultBrush}" CornerRadius="8" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1">
-            <Button x:Name="myButton" Width="25" Height="25" CornerRadius="13" Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="1">
-                <Button.Flyout>
-                    <Flyout>
-                        <StackPanel>
-                            <Button>Hello there</Button>
-                        </StackPanel>
-                    </Flyout>
-                </Button.Flyout>
-                <Button.Resources>
-                    <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="DeepSkyBlue"/>
-                    </ResourceDictionary>
-                </Button.Resources>
-            </Button>
+            
         </Grid>
     </Grid>
 

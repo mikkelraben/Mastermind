@@ -43,6 +43,9 @@
     <ClCompile Include="ColorButton.cpp">
       <Filter>UI</Filter>
     </ClCompile>
+    <ClCompile Include="InFlyoutButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Color.h">
@@ -70,6 +73,9 @@
       <Filter>App</Filter>
     </ClInclude>
     <ClInclude Include="ColorButton.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="InFlyoutButton.h">
       <Filter>UI</Filter>
     </ClInclude>
   </ItemGroup>

@@ -108,6 +108,7 @@
     <ClInclude Include="ColorButton.h" />
     <ClInclude Include="Colors.h" />
     <ClInclude Include="CommonUILayer.h" />
+    <ClInclude Include="InFlyoutButton.h" />
     <ClInclude Include="MainGame.xaml.h">
       <DependentUpon>MainGame.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -136,6 +137,7 @@
     <ClCompile Include="ColorButton.cpp" />
     <ClCompile Include="Colors.cpp" />
     <ClCompile Include="CommonUILayer.cpp" />
+    <ClCompile Include="InFlyoutButton.cpp" />
     <ClCompile Include="MainGame.xaml.cpp">
       <DependentUpon>MainGame.xaml</DependentUpon>
       <SubType>Code</SubType>
