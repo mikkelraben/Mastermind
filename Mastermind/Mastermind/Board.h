@@ -6,6 +6,7 @@ class Board
 public:
 	Board();
 	CodeRow* rows;
+	Code Secret;
 private:
 	int numRows = 10;
 
