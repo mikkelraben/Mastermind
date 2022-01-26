@@ -2,8 +2,10 @@
 #include "Code.h"
 class CodeRow
 {
-	CodeRow();
-	enum Result {None, Color, Position};
+public:
+	CodeRow(int Length);
+	enum class Result {None, Color, Position};
+	int size;
 	Code* Row;
 	Result* ResultGrid;
 	void calculateResult();

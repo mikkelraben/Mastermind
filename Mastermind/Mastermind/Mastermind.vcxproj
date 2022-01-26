@@ -105,7 +105,9 @@
     <ClInclude Include="Code.h" />
     <ClInclude Include="CodeRow.h" />
     <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorButton.h" />
     <ClInclude Include="Colors.h" />
+    <ClInclude Include="CommonUILayer.h" />
     <ClInclude Include="MainGame.xaml.h">
       <DependentUpon>MainGame.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -117,6 +119,7 @@
     <ClInclude Include="MainWindow.xaml.h">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="WinUIMethods.h" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
@@ -130,7 +133,9 @@
     <ClCompile Include="Code.cpp" />
     <ClCompile Include="CodeRow.cpp" />
     <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ColorButton.cpp" />
     <ClCompile Include="Colors.cpp" />
+    <ClCompile Include="CommonUILayer.cpp" />
     <ClCompile Include="MainGame.xaml.cpp">
       <DependentUpon>MainGame.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -145,6 +150,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="WinUIMethods.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="App.idl">

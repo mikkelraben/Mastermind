@@ -6,6 +6,7 @@ public:
 	masterColors();
 	masterColors(int numColors);
 	m_Color::Color* Colors;
+	int NumColors();
 private:
 	void GenerateColors();
 	int numColors = 6;

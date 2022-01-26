@@ -1,5 +1,7 @@
 #pragma once
 class Code
 {
-	int Color;
+public:
+	int* code;
+	int length;
 };

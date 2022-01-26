@@ -1,39 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="MainWindow.xaml" />
-    <Page Include="MainGame.xaml" />
+    <Page Include="MainGame.xaml">
+      <Filter>UI</Filter>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Filter>UI</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="App.idl" />
     <Midl Include="MainWindow.idl" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp" />
-    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
-    <ClCompile Include="Board.cpp" />
-    <ClCompile Include="CodeRow.cpp" />
-    <ClCompile Include="Code.cpp" />
     <ClCompile Include="Color.cpp">
       <Filter>Color</Filter>
     </ClCompile>
     <ClCompile Include="Colors.cpp">
       <Filter>Color</Filter>
     </ClCompile>
+    <ClCompile Include="CommonUILayer.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="WinUIMethods.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="Code.cpp">
+      <Filter>Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeRow.cpp">
+      <Filter>Backend</Filter>
+    </ClCompile>
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="Board.h" />
-    <ClInclude Include="CodeRow.h" />
-    <ClInclude Include="Code.h" />
     <ClInclude Include="Color.h">
       <Filter>Color</Filter>
     </ClInclude>
     <ClInclude Include="Colors.h">
       <Filter>Color</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUILayer.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="WinUIMethods.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="Code.h">
+      <Filter>Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeRow.h">
+      <Filter>Backend</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorButton.h">
+      <Filter>UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -43,14 +80,37 @@
     <Filter Include="Color">
       <UniqueIdentifier>{cad1eb5d-70ae-4819-8e94-614872dcbfdb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{c84440fa-63b6-404f-8c47-dbcecf1c5939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Backend">
+      <UniqueIdentifier>{d1ad575f-fcfb-4eeb-b9ea-578b5a55d8ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{422be82b-16c5-4412-9261-1305ddc336ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{bdba35c4-e2d6-4867-a514-56191774335b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="readme.txt" />
+    <Manifest Include="app.manifest">
+      <Filter>App</Filter>
+    </Manifest>
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="app.manifest" />
+    <ApplicationDefinition Include="App.xaml">
+      <Filter>App</Filter>
+    </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <Filter>App</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt">
+      <Filter>App</Filter>
+    </Text>
   </ItemGroup>
 </Project>

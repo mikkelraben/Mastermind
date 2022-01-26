@@ -2,6 +2,7 @@
 #include "Colors.h"
 #include <exception>
 
+//rework to use optional variable
 masterColors::masterColors()
 {
 	Colors = new m_Color::Color[numColors];
@@ -17,6 +18,12 @@ masterColors::masterColors(int numColors)
 	}
 	this->numColors = numColors;
 	masterColors();
+}
+
+
+int masterColors::NumColors()
+{
+	return numColors;
 }
 
 void masterColors::GenerateColors()
