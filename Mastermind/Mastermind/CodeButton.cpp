@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
-#include "ColorButton.h"
-#if __has_include("ColorButton.g.cpp")
-#include "ColorButton.g.cpp"
+#include "CodeButton.h"
+#if __has_include("CodeButton.g.cpp")
+#include "CodeButton.g.cpp"
 #endif
 
 using namespace winrt;
@@ -12,18 +12,14 @@ using namespace Microsoft::UI::Xaml;
 
 namespace winrt::Mastermind::implementation
 {
-    ColorButton::ColorButton()
+    CodeButton::CodeButton()
     {
-        DefaultStyleKey(winrt::box_value(L"Mastermind.ColorButton"));
+        DefaultStyleKey(winrt::box_value(L"Mastermind.CodeButton"));
     }
 
-    int32_t ColorButton::MyProperty()
+    int32_t CodeButton::ColorInt()
     {
         throw hresult_not_implemented();
     }
 
-    void ColorButton::MyProperty(int32_t /* value */)
-    {
-        throw hresult_not_implemented();
-    }
 }

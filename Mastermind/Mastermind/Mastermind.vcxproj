@@ -103,12 +103,18 @@
   <ItemGroup>
     <ClInclude Include="Board.h" />
     <ClInclude Include="Code.h" />
+    <ClInclude Include="CodeButton.h">
+      <DependentUpon>CodeButton.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="CodeRow.h" />
     <ClInclude Include="Color.h" />
-    <ClInclude Include="ColorButton.h" />
+    <ClInclude Include="ColorButton.h">
+      <DependentUpon>ColorButton.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="Colors.h" />
     <ClInclude Include="CommonUILayer.h" />
-    <ClInclude Include="InFlyoutButton.h" />
     <ClInclude Include="MainGame.xaml.h">
       <DependentUpon>MainGame.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -128,16 +134,21 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml" />
+    <Page Include="Themes\Generic.xaml" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Code.cpp" />
+    <ClCompile Include="CodeButton.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="CodeRow.cpp" />
     <ClCompile Include="Color.cpp" />
-    <ClCompile Include="ColorButton.cpp" />
+    <ClCompile Include="ColorButton.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="Colors.cpp" />
     <ClCompile Include="CommonUILayer.cpp" />
-    <ClCompile Include="InFlyoutButton.cpp" />
     <ClCompile Include="MainGame.xaml.cpp">
       <DependentUpon>MainGame.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -158,6 +169,14 @@
     <Midl Include="App.idl">
       <SubType>Code</SubType>
       <DependentUpon>App.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="CodeButton.idl">
+      <DependentUpon>CodeButton.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="ColorButton.idl">
+      <DependentUpon>ColorButton.cpp</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
     <Midl Include="MainGame.idl">
       <DependentUpon>MainGame.xaml</DependentUpon>

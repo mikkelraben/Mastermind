@@ -1,0 +1,12 @@
+namespace Mastermind
+{
+    [default_interface]
+    runtimeclass CodeButton : Microsoft.UI.Xaml.Controls.Control
+    {
+        CodeButton();
+        Int32 ColorInt;
+        Windows.UI.Color RestColor;
+        Windows.UI.Color HoverColor;
+        Windows.UI.Color PressedColor;
+    }
+}

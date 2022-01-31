@@ -7,6 +7,9 @@
     <Page Include="MainWindow.xaml">
       <Filter>UI</Filter>
     </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Filter>UI</Filter>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="App.idl" />
@@ -40,10 +43,10 @@
     <ClCompile Include="pch.cpp">
       <Filter>App</Filter>
     </ClCompile>
-    <ClCompile Include="ColorButton.cpp">
+    <ClCompile Include="CodeButton.cpp">
       <Filter>UI</Filter>
     </ClCompile>
-    <ClCompile Include="InFlyoutButton.cpp">
+    <ClCompile Include="ColorButton.cpp">
       <Filter>UI</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,12 +74,6 @@
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>App</Filter>
-    </ClInclude>
-    <ClInclude Include="ColorButton.h">
-      <Filter>UI</Filter>
-    </ClInclude>
-    <ClInclude Include="InFlyoutButton.h">
-      <Filter>UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
