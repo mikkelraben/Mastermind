@@ -1,0 +1,9 @@
+namespace Mastermind
+{
+    [default_interface]
+    runtimeclass SelectColor : Microsoft.UI.Xaml.Controls.Control
+    {
+        SelectColor();
+        Int32 MyProperty;
+    }
+}

@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include "App.xaml.g.h"
+#include "SelectColor.h"
 
 
 namespace winrt::Mastermind::implementation

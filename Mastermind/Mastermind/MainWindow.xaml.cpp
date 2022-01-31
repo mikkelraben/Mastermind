@@ -2,7 +2,6 @@
 #include "MainWindow.xaml.h"
 #include "Colors.h"
 #include "ColorButton.h"
-#include "InFlyoutButton.h"
 #if __has_include("MainWindow.g.cpp")
 #include "MainWindow.g.cpp"
 #endif
@@ -26,13 +25,12 @@ namespace winrt::Mastermind::implementation
         //myButton().Background(SolidColorBrush(test.color));
         //myButton().Resources().Insert(winrt::box_value(L"ButtonBackgroundPointerOver"), winrt::box_value(SolidColorBrush(test.hoverColor)));
         //myButton().Resources().Insert(winrt::box_value(L"ButtonBackgroundPressed"), winrt::box_value(SolidColorBrush(test.PressedColor)));
-           
-        test = colors.Colors[1].color;
-        InFlyoutButton *button = new InFlyoutButton(test);
-        //*button->button
-        winrt::Microsoft::UI::Xaml::Controls::Button button1 = *button->button;
+        auto btn = SelectColor();
+        MainGrid().Children().Append(btn);
+        btn.Background(SolidColorBrush(test.color));
         
-        MainGrid().Children().Append(button1);
+        test = colors.Colors[1].color;
+        
 
     }
 
