@@ -10,9 +10,16 @@
                     <Button Width="32" Height="32" >
                         <Button.Flyout>
                             <Flyout x:Name="btnFlyout">
-                                <StackPanel Orientation="Horizontal">
-                                    
-                                </StackPanel>
+                                <Grid>
+                                    <GridView
+                                    x:Name="FlyoutGrid"
+                                    ItemsSource="{x:Bind }"
+                                    ItemTemplate="{StaticResource FlyoutButton}"/>
+                                    <DataTemplate x:Key="FlyoutButton">
+                                        <Button/>
+                                    </DataTemplate>
+                                </Grid>
+
                             </Flyout>
                         </Button.Flyout>
                     </Button>
