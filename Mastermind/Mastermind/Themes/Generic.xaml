@@ -3,20 +3,22 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Mastermind">
 
-    <Style TargetType="local:CodeButton" >
+    <Style TargetType="local:SelectColor" >
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="local:CodeButton">
-                    <Button Background="{TemplateBinding RestColor}">
-                        <ResourceDictionary>
-                            <Setter x:Key="ButtonBackgroundPointerOver" Value="{TemplateBinding HoverColor}"/>
-                            <Setter x:Key="ButtonBackgroundPressed" Value="{TemplateBinding PressedColor}"/>
-                        </ResourceDictionary>
-                    </Button>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
+                <ControlTemplate TargetType="local:SelectColor">
+                    <Button Width="32" Height="32" >
+                        <Button.Flyout>
+                            <Flyout x:Name="btnFlyout">
+                                <Grid>
+                                    <GridView
+                                    x:Name="FlyoutGrid"
+                                    ItemsSource="{x:Bind }"
+                                    ItemTemplate="{StaticResource FlyoutButton}"/>
+                                    <DataTemplate x:Key="FlyoutButton">
+                                        <Button/>
+                                    </DataTemplate>
+                                </Grid>
 
     <Style TargetType="local:ColorButton" >
         <Setter Property="Template">
@@ -27,6 +29,9 @@
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}">
                     </Border>
+                            </Flyout>
+                        </Button.Flyout>
+                    </Button>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

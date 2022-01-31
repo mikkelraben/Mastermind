@@ -126,6 +126,10 @@
     <ClInclude Include="MainWindow.xaml.h">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="SelectColor.h">
+      <DependentUpon>SelectColor.cpp</DependentUpon>
+      <SubType>Code</SubType>
+    </ClInclude>
     <ClInclude Include="WinUIMethods.h" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +167,9 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="SelectColor.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
     <ClCompile Include="WinUIMethods.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +192,10 @@
     <Midl Include="MainWindow.idl">
       <SubType>Code</SubType>
       <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Midl>
+    <Midl Include="SelectColor.idl">
+      <DependentUpon>SelectColor.cpp</DependentUpon>
+      <SubType>Code</SubType>
     </Midl>
   </ItemGroup>
   <ItemGroup>

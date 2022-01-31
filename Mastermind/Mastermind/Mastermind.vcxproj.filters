@@ -46,7 +46,7 @@
     <ClCompile Include="CodeButton.cpp">
       <Filter>UI</Filter>
     </ClCompile>
-    <ClCompile Include="ColorButton.cpp">
+    <ClCompile Include="SelectColor.cpp">
       <Filter>UI</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,6 +74,12 @@
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorButton.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="InFlyoutButton.h">
+      <Filter>UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
