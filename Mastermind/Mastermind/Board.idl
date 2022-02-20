@@ -1,0 +1,8 @@
+namespace Mastermind
+{
+    [default_interface]
+    runtimeclass Board : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        Board();
+    }
+}

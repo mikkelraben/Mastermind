@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
-#include "CodeButton.h"
-#if __has_include("CodeButton.g.cpp")
-#include "CodeButton.g.cpp"
+#include "Game.xaml.h"
+#if __has_include("Game.g.cpp")
+#include "Game.g.cpp"
 #endif
 
 using namespace winrt;
@@ -12,14 +12,8 @@ using namespace Microsoft::UI::Xaml;
 
 namespace winrt::Mastermind::implementation
 {
-    CodeButton::CodeButton()
+    Game::Game()
     {
-        DefaultStyleKey(winrt::box_value(L"Mastermind.CodeButton"));
+        InitializeComponent();
     }
-
-    int32_t CodeButton::ColorInt()
-    {
-        throw hresult_not_implemented();
-    }
-
 }

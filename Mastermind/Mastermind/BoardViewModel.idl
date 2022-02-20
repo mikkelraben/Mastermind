@@ -1,0 +1,10 @@
+namespace Mastermind
+{
+    [bindable]
+    [default_interface]
+    runtimeclass BoardViewModel 
+    {
+        BoardViewModel();
+        Windows.Foundation.Collections.IVector<IInspectable> Rows;
+    }
+}

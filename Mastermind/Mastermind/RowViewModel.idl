@@ -1,0 +1,11 @@
+namespace Mastermind
+{
+    [bindable]
+    [default_interface]
+    runtimeclass RowViewModel : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        RowViewModel();
+        Windows.Foundation.Collections.IVector<IInspectable> Columns;
+        Windows.Foundation.Collections.IVector<IInspectable> Result;
+    }
+}

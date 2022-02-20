@@ -1,0 +1,8 @@
+namespace Mastermind
+{
+    [default_interface]
+    runtimeclass Menu : Microsoft.UI.Xaml.Controls.Page
+    {
+        Menu();
+    }
+}

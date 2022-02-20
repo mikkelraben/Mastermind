@@ -1,0 +1,11 @@
+namespace Mastermind
+{
+    [bindable]
+    [default_interface]
+    runtimeclass ColorViewModel : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        ColorViewModel();
+        Int32 Color;
+        Windows.UI.Color Background;
+    }
+}

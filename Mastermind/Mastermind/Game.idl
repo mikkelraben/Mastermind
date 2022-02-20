@@ -1,0 +1,8 @@
+namespace Mastermind
+{
+    [default_interface]
+    runtimeclass Game : Microsoft.UI.Xaml.Controls.Page
+    {
+        Game();
+    }
+}

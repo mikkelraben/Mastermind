@@ -1,8 +1,0 @@
-namespace Mastermind
-{
-    [default_interface]
-    runtimeclass MainGame : Microsoft.UI.Xaml.Controls.Page
-    {
-        MainGame();
-    }
-}

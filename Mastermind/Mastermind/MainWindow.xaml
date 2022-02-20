@@ -9,10 +9,33 @@
     >
 
 
-    <Grid Background="#1c1c1c">
-        <Grid Name="MainGrid" Width="200" Height="600" Background="{ThemeResource LayerFillColorDefaultBrush}" CornerRadius="8" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1">
-            
+
+
+    <Grid Background="{StaticResource SolidBackgroundFillColorBase}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="AppTitleBar" Background="{StaticResource LayerFillColorDefaultBrush}">
+            <Button x:Name="BackButton"
+                    Style="{StaticResource NavigationBackButtonNormalStyle}"
+                    VerticalAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    FontSize="14"
+                    Click="BackButton_Click"
+                    IsEnabled="{Binding CanGoBack, ElementName=MainFrame, Mode=OneWay}"/>
+            <TextBlock Text="Mastermind"
+                       TextWrapping="NoWrap"
+                       Style="{StaticResource CaptionTextBlockStyle}" 
+                       VerticalAlignment="Center"
+                       Margin="52,0,0,0"/>
         </Grid>
+        
+        <Grid Grid.Row="1" Background="{StaticResource SolidBackgroundFillColorBase}" VerticalAlignment="Stretch">
+            <Frame x:Name="MainFrame" Loaded="MainFrame_Loaded"/>
+        </Grid>
+        
     </Grid>
 
 </Window>

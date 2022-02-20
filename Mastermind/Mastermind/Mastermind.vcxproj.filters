@@ -1,19 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Page Include="MainGame.xaml">
-      <Filter>UI</Filter>
-    </Page>
     <Page Include="MainWindow.xaml">
-      <Filter>UI</Filter>
+      <Filter>UI\Views</Filter>
     </Page>
-    <Page Include="Themes\Generic.xaml">
-      <Filter>UI</Filter>
+    <Page Include="Board.xaml">
+      <Filter>UI\Views</Filter>
+    </Page>
+    <Page Include="Row.xaml">
+      <Filter>UI\Views</Filter>
+    </Page>
+    <Page Include="SelectColor.xaml">
+      <Filter>UI\Views</Filter>
+    </Page>
+    <Page Include="Menu.xaml">
+      <Filter>UI\Views</Filter>
+    </Page>
+    <Page Include="Game.xaml">
+      <Filter>UI\Views</Filter>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <Midl Include="App.idl" />
     <Midl Include="MainWindow.idl" />
+    <Midl Include="ColorViewModel.idl">
+      <Filter>UI\ViewModel</Filter>
+    </Midl>
+    <Midl Include="SelectColorViewModel.idl">
+      <Filter>UI\ViewModel</Filter>
+    </Midl>
+    <Midl Include="RowViewModel.idl">
+      <Filter>UI\ViewModel</Filter>
+    </Midl>
+    <Midl Include="BoardViewModel.idl">
+      <Filter>UI\ViewModel</Filter>
+    </Midl>
+    <Midl Include="ResultViewModel.idl">
+      <Filter>UI\ViewModel</Filter>
+    </Midl>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Color.cpp">
@@ -22,32 +46,14 @@
     <ClCompile Include="Colors.cpp">
       <Filter>Color</Filter>
     </ClCompile>
-    <ClCompile Include="CommonUILayer.cpp">
-      <Filter>UI</Filter>
-    </ClCompile>
-    <ClCompile Include="WinUIMethods.cpp">
-      <Filter>UI</Filter>
-    </ClCompile>
-    <ClCompile Include="Board.cpp">
-      <Filter>Backend</Filter>
-    </ClCompile>
-    <ClCompile Include="Code.cpp">
-      <Filter>Backend</Filter>
-    </ClCompile>
-    <ClCompile Include="CodeRow.cpp">
-      <Filter>Backend</Filter>
-    </ClCompile>
     <ClCompile Include="$(GeneratedFilesDir)module.g.cpp">
       <Filter>App</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>App</Filter>
     </ClCompile>
-    <ClCompile Include="CodeButton.cpp">
-      <Filter>UI</Filter>
-    </ClCompile>
-    <ClCompile Include="SelectColor.cpp">
-      <Filter>UI</Filter>
+    <ClCompile Include="Result.cpp">
+      <Filter>Backend</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -57,29 +63,11 @@
     <ClInclude Include="Colors.h">
       <Filter>Color</Filter>
     </ClInclude>
-    <ClInclude Include="CommonUILayer.h">
-      <Filter>UI</Filter>
-    </ClInclude>
-    <ClInclude Include="WinUIMethods.h">
-      <Filter>UI</Filter>
-    </ClInclude>
-    <ClInclude Include="Board.h">
-      <Filter>Backend</Filter>
-    </ClInclude>
-    <ClInclude Include="Code.h">
-      <Filter>Backend</Filter>
-    </ClInclude>
-    <ClInclude Include="CodeRow.h">
-      <Filter>Backend</Filter>
-    </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>App</Filter>
     </ClInclude>
-    <ClInclude Include="ColorButton.h">
-      <Filter>UI</Filter>
-    </ClInclude>
-    <ClInclude Include="InFlyoutButton.h">
-      <Filter>UI</Filter>
+    <ClInclude Include="Result.h">
+      <Filter>Backend</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -98,8 +86,11 @@
     <Filter Include="App">
       <UniqueIdentifier>{422be82b-16c5-4412-9261-1305ddc336ca}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Test">
-      <UniqueIdentifier>{bdba35c4-e2d6-4867-a514-56191774335b}</UniqueIdentifier>
+    <Filter Include="UI\Views">
+      <UniqueIdentifier>{ad03c5bc-23e3-4f97-bb38-1e9f59167c73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\ViewModel">
+      <UniqueIdentifier>{76c937dd-910d-4272-9d5f-a34d5ca636da}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

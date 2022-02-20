@@ -1,0 +1,14 @@
+import "ColorViewModel.idl";
+
+namespace Mastermind
+{
+    [bindable]
+    [default_interface]
+    runtimeclass SelectColorViewModel : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        SelectColorViewModel();
+        ColorViewModel Selection;
+        Boolean Enabled;
+        Windows.Foundation.Collections.IVector<IInspectable> Colors;
+    }
+}

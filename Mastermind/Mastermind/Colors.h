@@ -9,5 +9,6 @@ public:
 	int NumColors();
 private:
 	void GenerateColors();
+	void init();
 	int numColors = 6;
 };

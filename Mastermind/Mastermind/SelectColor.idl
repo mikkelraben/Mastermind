@@ -1,9 +1,16 @@
+import "ColorViewModel.idl";
+
 namespace Mastermind
 {
     [default_interface]
-    runtimeclass SelectColor : Microsoft.UI.Xaml.Controls.Control
+    runtimeclass SelectColor : Microsoft.UI.Xaml.Controls.UserControl, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
     {
         SelectColor();
-        Int32 MyProperty;
+        static Microsoft.UI.Xaml.DependencyProperty MainColorProperty{ get; };
+        ColorViewModel MainColor;
+        static Microsoft.UI.Xaml.DependencyProperty EnabledProperty{ get; };
+        Boolean Enabled;
+        static Microsoft.UI.Xaml.DependencyProperty ColorsProperty{ get; };
+        Windows.Foundation.Collections.IVector<IInspectable> Colors;
     }
 }

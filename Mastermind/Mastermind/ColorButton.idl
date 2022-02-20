@@ -1,9 +1,0 @@
-namespace Mastermind
-{
-    [default_interface]
-    runtimeclass ColorButton : Microsoft.UI.Xaml.Controls.Control
-    {
-        ColorButton();
-        Int32 MyProperty;
-    }
-}

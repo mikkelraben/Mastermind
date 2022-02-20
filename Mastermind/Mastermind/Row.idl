@@ -1,0 +1,12 @@
+import "RowViewModel.idl";
+
+namespace Mastermind
+{
+    [default_interface]
+    runtimeclass Row : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        Row();
+        static Microsoft.UI.Xaml.DependencyProperty rowViewModelProperty{ get; };
+        RowViewModel rowViewModel;
+    }
+}
