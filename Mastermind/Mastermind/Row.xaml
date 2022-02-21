@@ -22,7 +22,7 @@
         <GridView Name="Result" ItemsSource="{x:Bind rowViewModel.Result}" IsItemClickEnabled="False" SelectionMode="None"  VerticalContentAlignment="Center" VerticalAlignment="Center" Margin="8,0,0,0">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="local:ResultViewModel">
-                    <Grid Width="4" Height="4" Margin="0" CornerRadius="4">
+                    <Grid Width="8" Height="8" Margin="0" CornerRadius="4">
                         <Grid.Background>
                             <SolidColorBrush Color="{x:Bind Color, Mode=OneWay}"/>
                         </Grid.Background>

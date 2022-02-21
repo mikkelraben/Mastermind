@@ -24,6 +24,7 @@ namespace winrt::Mastermind::implementation
         MainColor().Color(e.ClickedItem().as<ColorViewModel>().Color());
         MainColor().Background(e.ClickedItem().as<ColorViewModel>().Background());
         ColorPresenter().Background(Microsoft::UI::Xaml::Media::SolidColorBrush(e.ClickedItem().as<ColorViewModel>().Background()));
+        ButtonFlyout().Hide();
     }
 
     Microsoft::UI::Xaml::DependencyProperty SelectColor::m_colorProperty =

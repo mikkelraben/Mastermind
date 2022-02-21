@@ -9,7 +9,7 @@
   <Identity
     Name="0282581b-46a7-49cd-8215-a579c859dd22"
     Publisher="CN=Mikkel Johan Meldgaard Raben"
-    Version="1.0.1.0" />
+    Version="1.0.5.0" />
 
   <Properties>
     <DisplayName>Mastermind (Package)</DisplayName>

@@ -7,7 +7,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTest
 {
-	TEST_CLASS(UnitTest)
+	TEST_CLASS(ResultTesting)
 	{
 	public:
 		TEST_METHOD(AllBlack) {

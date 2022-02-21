@@ -86,7 +86,7 @@ namespace winrt::Mastermind::implementation
 
         }
         MainGrid().Height(m_rowCount*52+16);
-        MainGrid().Width(m_columnCount*56+68);
+        MainGrid().Width(m_columnCount*58+68);
 
 
         for (int i = 0; i < m_columnCount; i++)

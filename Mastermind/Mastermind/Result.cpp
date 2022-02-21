@@ -11,13 +11,13 @@ Result::ResultType* Result::getResult(unsigned char* guess, int* secret, unsigne
         {
             if (guess[i] == secret[j])
             {
-                if (i == j)
+                if (i != j)
                 {
-                    result[i] = ResultType::Black;
+                    result[i] = ResultType::White;
                 }
                 else
                 {
-                    result[i] = ResultType::White;
+                    result[i] = ResultType::Black;
                 }
             }
         }

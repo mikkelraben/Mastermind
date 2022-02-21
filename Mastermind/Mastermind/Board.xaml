@@ -23,7 +23,11 @@
 
         
         <StackPanel Name="Controls" Grid.Row="1" HorizontalAlignment="Center" Orientation="Vertical">
-            <Grid x:Name="SecretRow" Visibility="Collapsed" Height="52"/>
+            <Grid x:Name="SecretRow" Visibility="Collapsed" Height="52">
+                <Grid.ChildrenTransitions>
+                    <EntranceThemeTransition IsStaggeringEnabled="True" />
+                </Grid.ChildrenTransitions>
+            </Grid>
             <Button Margin="4" Click="GiveUp_Click" HorizontalAlignment="Center">Give Up?</Button>
         </StackPanel>
     </Grid>

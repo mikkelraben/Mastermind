@@ -9,7 +9,7 @@
     <Grid CornerRadius="22" x:Name="ColorPresenter">
         <Button Height="44" Width="44" CornerRadius="22" IsEnabled="{x:Bind Enabled,Mode=OneWay}" >
             <Button.Flyout>
-                <Flyout>
+                <Flyout x:Name="ButtonFlyout">
                     <GridView ItemsSource="{x:Bind Colors, Mode=OneWay}" IsItemClickEnabled="True" ItemClick="GridView_ItemClick" SelectionMode="None" Padding="0">
                         <GridView.ItemTemplate>
                             <DataTemplate x:DataType="local:ColorViewModel">
