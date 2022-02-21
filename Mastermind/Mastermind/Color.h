@@ -17,7 +17,6 @@ namespace m_Color {
 		Windows::UI::Color hoverColor;
 		Windows::UI::Color PressedColor;
 		void CalculateOtherColors();
-
 	};
 
 	struct HSL {

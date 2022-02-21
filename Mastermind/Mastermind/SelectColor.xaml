@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid CornerRadius="22" x:Name="ColorPresenter">
-        <Button x:Name="myButton" Height="44" Width="44" CornerRadius="22" IsEnabled="{x:Bind Enabled,Mode=OneWay}" Background="Transparent">
+        <Button Height="44" Width="44" CornerRadius="22" IsEnabled="{x:Bind Enabled,Mode=OneWay}" >
             <Button.Flyout>
                 <Flyout>
                     <GridView ItemsSource="{x:Bind Colors, Mode=OneWay}" IsItemClickEnabled="True" ItemClick="GridView_ItemClick" SelectionMode="None" Padding="0">
@@ -42,7 +42,6 @@
                     </GridView>
                 </Flyout>
             </Button.Flyout>
-
         </Button>
         <Grid.Background>
             <SolidColorBrush x:Name="BackgroundColor" Color="Transparent"/>

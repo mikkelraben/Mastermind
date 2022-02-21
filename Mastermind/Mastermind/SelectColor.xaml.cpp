@@ -16,7 +16,6 @@ namespace winrt::Mastermind::implementation
     SelectColor::SelectColor() : m_colors(winrt::single_threaded_observable_vector<IInspectable>())
     {
         InitializeComponent();
-
     }
 
 

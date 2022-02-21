@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Result.h"
 
-Result::ResultType* Result::getResult(uint8_t* guess, int32_t* secret, uint8_t size)
+Result::ResultType* Result::getResult(unsigned char* guess, int* secret, unsigned char size)
 {
     ResultType* result = new ResultType[size];
     for (int i = 0; i < size; i++)

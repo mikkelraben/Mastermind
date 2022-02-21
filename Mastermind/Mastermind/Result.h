@@ -1,4 +1,5 @@
 #pragma once
+
 class Result
 {
 
@@ -9,11 +10,10 @@ public:
         White,
         Black
     }; 
-    ResultType* getResult(uint8_t* guess, int32_t* secret, uint8_t size);
+    ResultType* getResult(unsigned char* guess, int* secret, unsigned char size);
 private:
     ResultType* m_result;
-    uint8_t m_size;
-    uint8_t secret;
-    uint8_t* guess;
+    unsigned char m_size;
+    unsigned char* guess;
 };
 
